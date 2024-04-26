@@ -1,10 +1,11 @@
 <configuration>
-    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>./data/logs/PR32CreateMain.java.log</file>
         <encoder>
             <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
         </encoder>
-    </appender>
+    </appender>    
     <root level="info">
-        <appender-ref ref="console" />
+        <appender-ref ref="FILE"/>
     </root>
 </configuration>
